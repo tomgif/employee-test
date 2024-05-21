@@ -57,10 +57,7 @@
   </div>
 </template>
 
-<script
-  setup
-  lang="ts"
->
+<script setup lang="ts">
 import mockApi from './services/mockApi';
 import { computed, onBeforeMount, reactive } from 'vue';
 import SelectProduct from './components/select-product.vue';

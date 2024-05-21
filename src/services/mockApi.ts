@@ -20,7 +20,7 @@ const mockData: StaffDto = {
     { id: 2, name: 'Bob', date: '2003-03-21', department: 'South' },
     { id: 3, name: 'Kate', date: '2000-08-23', department: 'North' },
     { id: 4, name: 'Sam', date: '2001-10-12', department: 'West' }
-  ],
+  ]
   // testers: [
   //   { id: 7, name: 'Joseph', date: '2004-04-03' },
   //   { id: 8, name: 'Jade', date: '2003-12-12' }
