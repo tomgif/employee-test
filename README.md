@@ -1,9 +1,14 @@
-# Vue 3 + TypeScript + Vite
+# Salary Bonus (тествое задание)
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Наше приложение используется для премирования сотрудников. Информацию по сотрудникам мы получаем через API-клиент (**mockApi**). Отображение сотрудников по отделам уже реализовал наш разработчик.
+>**Наша задача** - реализовать выбор сотрудников при помощи соответствующих чекбоксов для отправки на сервер в виде массива.
 
-## Recommended Setup
+Предыдущий разработчик уже написал функцию **updateCollection**, однако, она не соответствует необходимым требованиям и должна быть переписана:
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
-
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
+- функция должна уметь добавлять элемент в массив **selected**
+- функция должна исключать элемент из массива **selected** если такой элемент уже присутствует в массиве **selected**
+- функция должна уметь добавлять элементы переданного массива в массив **selected**
+- если в массиве **selected** присутствует хотя бы 1 элемент переданного массива, то массив **selected** должен быть расширен недостающими элементами
+- если в массиве **selected** присутствуют все элементы переданного массива, то все элементы переданного массива должны быть исключены из массива **selected**
+- недопустимо менять код компонентов из **./components**
+- в любой момент разработчики сервера могут передать новую коллекцию **testers**, элементы которой также можно будет добавить в массив **selected**
