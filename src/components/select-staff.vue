@@ -13,12 +13,12 @@
         style="margin-bottom: 20px;"
       >
         <el-col>
-          <product-table-cards
+          <employee-table
             :header="TITLE[category]"
             :collection="collection"
             :selected="selected"
             @update:selected="$emit('update:selected', $event)"
-          ></product-table-cards>
+          ></employee-table>
         </el-col>
       </el-row>
     </el-col>
@@ -32,7 +32,7 @@
 <script lang="ts" setup>
 import { computed } from 'vue';
 import { Employee, Staff } from '../typing.ts';
-import ProductTableCards from './product-table.vue';
+import EmployeeTable from './employee-table.vue';
 import { differenceWith, isEqual } from 'lodash';
 import { TITLE } from '../constants.ts';
 

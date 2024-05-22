@@ -35,7 +35,7 @@
           </li>
         </ul>
 
-        <select-product
+        <select-staff
           v-model:selected="selected"
           :staff="state.staff"
         >
@@ -51,7 +51,7 @@
               <pre>{{ selected }}</pre>
             </el-card>
           </template>
-        </select-product>
+        </select-staff>
       </el-main>
     </el-container>
   </div>
@@ -60,7 +60,7 @@
 <script setup lang="ts">
 import mockApi from './services/mockApi';
 import { computed, onBeforeMount, reactive } from 'vue';
-import SelectProduct from './components/select-product.vue';
+import SelectStaff from './components/select-staff.vue';
 import { Employee, Staff } from './typing.ts';
 
 const state: {
